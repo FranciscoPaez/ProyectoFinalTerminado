@@ -1,0 +1,52 @@
+.main-container {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+
+    h1{
+        color: $color-rose-1;
+        font-size: 5.5rem;
+        text-transform: uppercase;
+        margin-top: 5rem;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+
+    span{
+        color: $color-rose-light;
+        font-size: 4.7rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+    .parr{
+        color: $color-white;
+        margin-right:6rem;
+    }
+
+    .btn{
+        background-color: transparent;
+        color: $color-rose-1;
+        text-decoration: none;
+        border: 2px solid $color-rose-1;
+        padding: 10px 30px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 17px;
+
+        &:hover{
+            background-color: $color-rose-1;
+            border: 2px solid $color-rose-1;
+            cursor: pointer;
+            color: $color-white;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

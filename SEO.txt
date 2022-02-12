@@ -1,0 +1,19 @@
+En el archivo index.html sumé el SEO con las siguientes características:
+
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "Order Coffee Online to Your Home. We have the Best Products from Argentina. Coffee Delivery from your Favorite Restaurant. Order Online Now! Easy and fast. Exclusive Promotions. Easier. Pay With Your Cell Phone. Order Online. Pay Online."
+
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "Coffe, purchase Press Bodum, international coffe"
+
+Encabezado: para el encabezado del h1 utilicé el texto “Coffe Rose”
+
+Cada HTML tiene si titulo referido a la página correspondiente.
+
+
+En el archivo products.html sumé el SEO con las siguientes características:
+
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "Buy the best cafeteria products on our page, all payment methods available with free shipping."
+
+
+En el archivo about.html sumé el SEO con las siguientes características:
+
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "We serve all kinds of coffees, generally combined dishes, but not menus or letters. We are mainly characterized by express and fast service."

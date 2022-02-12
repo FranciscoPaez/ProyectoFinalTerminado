@@ -1,0 +1,310 @@
+@import "header", "footer", "indexMain", "aboutMain", "contact", "products", "var";
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+    background: #ee9ca7;  
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+}
+
+
+/* main payments*/
+
+.container__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.container__info .card{
+    position: relative;
+    width: 40rem;
+    height: 50px;
+    background: #ee9ca7;  
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    border-radius: 20px;
+    overflow: hidden;   
+    box-shadow: 0px 0px 19px 5px #ad48559c;
+}
+
+.container__info .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-rose-1;  
+    background: -webkit-linear-gradient(to right, #ffdde1, #f76579);
+    background: linear-gradient(to right, #ffdde1, #f76579);
+    clip-path: circle(15rem at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container__info .card:hover::before{
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container__info .card:after{
+    content: 'COFFEE';
+    position: absolute;
+    top: 22%;
+    left: 22%;
+    font-size: 5.8rem;
+    font-weight: 800;
+    color: #f7657998;
+}
+
+
+.container__info .card .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15rem;
+    text-align: center; 
+    transition: 1s;
+    z-index: 10;  
+}
+.container__info .card:hover .contentBx{
+    height: 65%;
+}
+
+
+.container__info .card .contentBx .h2-card{
+    text-transform: none;
+    font-size: 2rem;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.container__info .card .contentBx .size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container__info .card:hover .contentBx .size{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+
+}
+
+.container__info .card .contentBx .size span{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 2rem;
+    display: inline-block;
+    color: #f76579;
+    margin: 0 1rem;
+    transition: 0.5s;
+}
+
+
+.container__info .card .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.747);
+    border-radius: 1rem;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #f76579;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;  
+}
+
+.container__info .card .contentBx a:hover{
+    border:2px solid #f76579;
+    color: #f76579;
+    transition: none;
+}
+
+.container__info .card:hover .contentBx a{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+
+/* end main payments*/
+
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+
+    h2:after{
+    width: 12rem;
+    }
+
+    .header--logo i{
+        margin-left: 2rem;
+        animation: none;
+    }
+/* @media main about */
+    .about{
+        width: 100%;
+        height: auto;
+    }
+/* @media end main about */
+
+}
+
+
+
+@media screen and (max-width: 480px){
+    
+    header{
+        background: #ee9ca7;  
+        background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+        background: linear-gradient(to right, #ffdde1, #ee9ca7);
+        z-index: 1;
+    }
+
+    .header--logo i{
+        margin-bottom: 1rem;
+    }
+    nav{
+        background-color: #f76579;
+    }
+
+    h2{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    span{
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 1rem;
+    }
+    
+    p{
+        text-align: center;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: 10px;
+    }
+
+    .btn{
+        margin-top: 2rem;
+    }
+
+    .main-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+/* @media main about */
+
+    .text h1{
+        font-size: 60px;
+        margin-bottom: none;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .text h5{
+        text-align: center;
+        margin-top: 0;
+    }    
+    .text p{
+        font-size: 15px;
+    }
+
+    .about .content img{
+        margin-top: 4rem;
+        width: 14rem;
+    }
+
+/* @media end main about */
+
+
+/* @media main contact */
+
+    .contact-box{ 
+        margin-top: 8rem;
+        margin-bottom: 1rem;
+        max-width: 370px;
+    }
+
+    textarea{
+        min-height: 8rem;
+    }
+
+    .container-main{
+        position: relative;
+        height: 89%;
+    }
+
+    
+    
+/* @media end main contact */
+
+
+
+/* @media main products*/
+
+    .main-container{
+        margin-left: 2.4rem;
+    }
+
+/* @media end main products*/
+
+
+/* @media main products*/
+
+
+
+.container__info .card:after{
+    content: 'COFFEE';
+    top: 28%;
+    left: 10%;
+    font-size: 4rem;
+}
+
+/* @media end main products*/
+
+
+    footer ul li{
+        padding: 1.5rem;
+        margin: 0 0.5rem;
+    }
+
+    footer ul li span{
+        font-size: 1.3rem !important;
+    }
+
+    footer ul li:hover span:nth-child(3){
+        transform: none;
+    }
+    footer ul li:hover span:nth-child(2){
+        transform: none;
+    }
+}
